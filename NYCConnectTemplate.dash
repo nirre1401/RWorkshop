@@ -1,0 +1,1169 @@
+{
+  "datasource": {
+    "title": "citibike_connect",
+    "fullname": "LocalHost/citibike_connect",
+    "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+    "address": "LocalHost",
+    "database": "acitibikeXwAaconnect"
+  },
+  "desc": "",
+  "editing": true,
+  "filters": [
+    {
+      "jaql": {
+        "datatype": "text",
+        "dim": "[TripData.start station name]",
+        "title": "start station name",
+        "column": "start station name",
+        "table": "TripData",
+        "collapsed": true,
+        "merged": true,
+        "filter": {
+          "explicit": false,
+          "multiSelection": true,
+          "all": true
+        }
+      },
+      "instanceid": "7FE3D-A62C-D7",
+      "isCascading": false,
+      "disabled": false
+    },
+    {
+      "jaql": {
+        "datatype": "text",
+        "dim": "[TripData.usertype]",
+        "title": "usertype",
+        "column": "usertype",
+        "table": "TripData",
+        "collapsed": true,
+        "merged": true,
+        "filter": {
+          "explicit": false,
+          "multiSelection": true,
+          "all": true
+        }
+      },
+      "instanceid": "D2D9B-9EAD-15",
+      "isCascading": false,
+      "disabled": false
+    },
+    {
+      "jaql": {
+        "table": "Weather",
+        "column": "TMAX",
+        "dim": "[Weather.TMAX]",
+        "datatype": "numeric",
+        "title": "TMAX",
+        "filter": {
+          "explicit": false,
+          "multiSelection": true,
+          "all": true
+        },
+        "collapsed": true
+      },
+      "instanceid": "271CD-70B3-6B",
+      "isCascading": false
+    },
+    {
+      "jaql": {
+        "datatype": "numeric",
+        "dim": "[TripData.gender]",
+        "title": "gender",
+        "column": "gender",
+        "table": "TripData",
+        "collapsed": true,
+        "filter": {
+          "explicit": false,
+          "multiSelection": true,
+          "all": true
+        }
+      },
+      "instanceid": "9D23D-F5AB-D7",
+      "isCascading": false,
+      "disabled": false
+    },
+    {
+      "jaql": {
+        "datatype": "numeric",
+        "dim": "[Date Dimension.csv.Weekend]",
+        "title": "Weekend",
+        "column": "Weekend",
+        "table": "Date Dimension.csv",
+        "collapsed": true,
+        "filter": {
+          "explicit": false,
+          "multiSelection": true,
+          "all": true
+        }
+      },
+      "instanceid": "9D3F8-F73F-20",
+      "isCascading": false,
+      "disabled": false
+    }
+  ],
+  "isPublic": null,
+  "layout": {
+    "instanceid": "AB886-CA7D-4A",
+    "type": "columnar",
+    "columns": [
+      {
+        "width": 100,
+        "cells": [
+          {
+            "subcells": [
+              {
+                "elements": [
+                  {
+                    "minHeight": 128,
+                    "maxHeight": 2048,
+                    "minWidth": 128,
+                    "maxWidth": 2048,
+                    "height": "332px",
+                    "defaultWidth": 512,
+                    "widgetid": "591196d424cf092043000020"
+                  }
+                ],
+                "width": 50,
+                "stretchable": false,
+                "pxlWidth": 802,
+                "index": 0
+              },
+              {
+                "elements": [
+                  {
+                    "minHeight": 128,
+                    "maxHeight": 2048,
+                    "minWidth": 128,
+                    "maxWidth": 2048,
+                    "defaultWidth": 512,
+                    "widgetid": "591196d424cf09204300001c",
+                    "height": "332px"
+                  }
+                ],
+                "width": 50,
+                "stretchable": false,
+                "pxlWidth": 801,
+                "index": 1
+              }
+            ]
+          },
+          {
+            "subcells": [
+              {
+                "elements": [
+                  {
+                    "minHeight": 64,
+                    "maxHeight": 2048,
+                    "minWidth": 64,
+                    "maxWidth": 2048,
+                    "height": "60px",
+                    "defaultWidth": 128,
+                    "widgetid": "591196d424cf092043000022"
+                  }
+                ],
+                "width": 100,
+                "stretchable": false,
+                "pxlWidth": 1603,
+                "index": 0
+              }
+            ]
+          },
+          {
+            "subcells": [
+              {
+                "elements": [
+                  {
+                    "minHeight": 128,
+                    "maxHeight": 2048,
+                    "minWidth": 128,
+                    "maxWidth": 2048,
+                    "height": "108px",
+                    "defaultWidth": 512,
+                    "widgetid": "591196d424cf09204300001b"
+                  }
+                ],
+                "width": 14.842300556586272,
+                "stretchable": false,
+                "pxlWidth": 238,
+                "index": 0
+              },
+              {
+                "elements": [
+                  {
+                    "minHeight": 128,
+                    "maxHeight": 2048,
+                    "minWidth": 128,
+                    "maxWidth": 2048,
+                    "defaultWidth": 512,
+                    "widgetid": "591196d424cf09204300001d",
+                    "height": "108px"
+                  }
+                ],
+                "width": 24.118738404452692,
+                "stretchable": false,
+                "pxlWidth": 387,
+                "index": 1
+              },
+              {
+                "elements": [
+                  {
+                    "minHeight": 128,
+                    "maxHeight": 2048,
+                    "minWidth": 128,
+                    "maxWidth": 2048,
+                    "defaultWidth": 512,
+                    "widgetid": "591196d424cf09204300001f",
+                    "height": "108px"
+                  }
+                ],
+                "width": 36.03896103896105,
+                "stretchable": false,
+                "pxlWidth": 577,
+                "index": 2
+              },
+              {
+                "elements": [
+                  {
+                    "minHeight": 128,
+                    "maxHeight": 2048,
+                    "minWidth": 128,
+                    "maxWidth": 2048,
+                    "defaultWidth": 512,
+                    "widgetid": "591196d424cf09204300001e",
+                    "height": "108px"
+                  }
+                ],
+                "width": 25,
+                "stretchable": false,
+                "pxlWidth": 401,
+                "index": 3
+              }
+            ]
+          },
+          {
+            "subcells": [
+              {
+                "elements": [
+                  {
+                    "minHeight": 64,
+                    "maxHeight": 2048,
+                    "minWidth": 64,
+                    "maxWidth": 2048,
+                    "height": "44px",
+                    "defaultWidth": 128,
+                    "widgetid": "591196d424cf092043000021"
+                  }
+                ],
+                "width": 100,
+                "stretchable": false,
+                "pxlWidth": 1603,
+                "index": 0
+              }
+            ]
+          },
+          {
+            "subcells": [
+              {
+                "elements": [
+                  {
+                    "minHeight": 128,
+                    "maxHeight": 2048,
+                    "minWidth": 128,
+                    "maxWidth": 2048,
+                    "defaultWidth": 512,
+                    "widgetid": "591196d424cf092043000027",
+                    "height": 659
+                  }
+                ],
+                "width": 100,
+                "stretchable": false,
+                "pxlWidth": 1603,
+                "index": 0
+              }
+            ]
+          }
+        ],
+        "pxlWidth": 1611,
+        "index": 0
+      }
+    ]
+  },
+  "oid": "591196d424cf09204300001a",
+  "original": null,
+  "parentFolder": null,
+  "source": null,
+  "style": {
+    "name": "vivid",
+    "palette": {
+      "_id": "566ad605545828c60db2f3e2",
+      "colors": [
+        "#3471AD",
+        "#F66500",
+        "#FFC400",
+        "#42BC39"
+      ],
+      "name": "Basic",
+      "isDefault": false,
+      "sortOrder": 20,
+      "isSystem": true
+    }
+  },
+  "title": "!NYC Connect Template",
+  "type": "dashboard",
+  "widgets": [
+    {
+      "title": "",
+      "subtype": "imageWidget",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "drawing": true,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "715FF-0FE0-9C",
+      "oid": "591196d424cf09204300001b",
+      "options": {
+        "dashboardFiltersMode": "slice",
+        "selector": false,
+        "title": false,
+        "autoUpdateOnEveryChange": true
+      },
+      "style": {
+        "src": "https://upload.wikimedia.org/math/2/3/d/23d928935e39f6154c6f8658112e23cc.png",
+        "width": 0.12,
+        "showMinMax": false,
+        "scale": "width",
+        "widgetID": "591196d424cf09204300001b",
+        "hideTitle": true
+      },
+      "type": "imageWidget"
+    },
+    {
+      "title": "",
+      "subtype": "imageWidget",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "drawing": true,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "88C9F-62B9-47",
+      "oid": "591196d424cf092043000020",
+      "options": {
+        "dashboardFiltersMode": "slice",
+        "selector": false,
+        "title": false,
+        "autoUpdateOnEveryChange": true
+      },
+      "style": {
+        "src": "http://cyclistsinternational.com/wp-content/uploads/2013/04/header1.jpg",
+        "width": 0.12,
+        "showMinMax": false,
+        "scale": "width",
+        "widgetID": "591196d424cf092043000020",
+        "hideTitle": true
+      },
+      "type": "imageWidget"
+    },
+    {
+      "title": "",
+      "subtype": "imageWidget",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "drawing": true,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "715FF-0FE0-9C",
+      "oid": "591196d424cf09204300001f",
+      "options": {
+        "dashboardFiltersMode": "slice",
+        "selector": false,
+        "title": false,
+        "autoUpdateOnEveryChange": true
+      },
+      "style": {
+        "src": "https://upload.wikimedia.org/math/7/4/8/7488f1380e9aa7faf6bc3c15cc00a2d5.png",
+        "width": 0.12,
+        "showMinMax": false,
+        "scale": "none",
+        "widgetID": "591196d424cf09204300001f",
+        "hideTitle": true
+      },
+      "type": "imageWidget"
+    },
+    {
+      "title": "",
+      "subtype": "imageWidget",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "drawing": true,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "715FF-0FE0-9C",
+      "oid": "591196d424cf09204300001e",
+      "options": {
+        "dashboardFiltersMode": "slice",
+        "selector": false,
+        "title": false,
+        "autoUpdateOnEveryChange": true
+      },
+      "style": {
+        "src": "https://upload.wikimedia.org/math/f/d/0/fd00192cf4bc0cc158c5842467965c57.png",
+        "width": 0.12,
+        "showMinMax": false,
+        "scale": "none",
+        "widgetID": "591196d424cf09204300001e",
+        "hideTitle": true
+      },
+      "type": "imageWidget"
+    },
+    {
+      "title": "",
+      "subtype": "imageWidget",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "drawing": true,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "715FF-0FE0-9C",
+      "oid": "591196d424cf09204300001d",
+      "options": {
+        "dashboardFiltersMode": "slice",
+        "selector": false,
+        "title": false,
+        "autoUpdateOnEveryChange": true
+      },
+      "style": {
+        "src": "https://upload.wikimedia.org/math/3/d/f/3df7788179835eefb1272fbc4468fd6f.png",
+        "width": 0.12,
+        "showMinMax": false,
+        "scale": "none",
+        "widgetID": "591196d424cf09204300001d",
+        "hideTitle": true
+      },
+      "type": "imageWidget"
+    },
+    {
+      "title": "",
+      "subtype": "imageWidget",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "oid": "591196d424cf09204300001c",
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "88C9F-62B9-47",
+      "style": {
+        "src": "http://cyclistsinternational.com/wp-content/uploads/2013/04/header1.jpg",
+        "width": 0.12,
+        "showMinMax": false,
+        "scale": "width",
+        "widgetID": "591196d424cf092043000020",
+        "hideTitle": true,
+        "align": "left",
+        "transform": "original",
+        "link": ""
+      },
+      "type": "imageWidget",
+      "dashboardid": "591196d424cf09204300001a",
+      "options": {
+        "dashboardFiltersMode": "slice",
+        "selector": false,
+        "title": false,
+        "autoUpdateOnEveryChange": true
+      }
+    },
+    {
+      "title": "Rich Text",
+      "subtype": "richtexteditor",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "drawing": true,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "D5F84-9A93-7A",
+      "oid": "591196d424cf092043000021",
+      "options": {
+        "triggersDomready": true,
+        "hideFromWidgetList": true,
+        "disableExportToCSV": true,
+        "disableExportToImage": true,
+        "toolbarButton": {
+          "css": "add-rich-text",
+          "tooltip": "RICHTEXT_MAIN.TOOLBAR_BUTTON"
+        },
+        "selector": false,
+        "disallowSelector": true,
+        "disallowWidgetTitle": true,
+        "supportsHierarchies": false,
+        "dashboardFiltersMode": "filter"
+      },
+      "style": {
+        "content": {
+          "html": "<h3><span style=\"color:#ffffff\">Multivariate Linear Regression based prediction</span></h3>\n\n<p>&nbsp;</p>\n",
+          "vAlign": "valign-middle",
+          "bgColor": "rgb(69, 149, 228)"
+        }
+      },
+      "type": "richtexteditor"
+    },
+    {
+      "title": "Rich Text",
+      "subtype": "richtexteditor",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "drawing": true,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "31CF1-5C26-45",
+      "oid": "591196d424cf092043000022",
+      "options": {
+        "triggersDomready": true,
+        "hideFromWidgetList": true,
+        "disableExportToCSV": true,
+        "disableExportToImage": true,
+        "toolbarButton": {
+          "css": "add-rich-text",
+          "tooltip": "RICHTEXT_MAIN.TOOLBAR_BUTTON"
+        },
+        "selector": false,
+        "disallowSelector": true,
+        "disallowWidgetTitle": true,
+        "supportsHierarchies": false,
+        "dashboardFiltersMode": "filter"
+      },
+      "style": {
+        "content": {
+          "html": "<h3><span style=\"color:rgb(255, 255, 255)\"><strong><span style=\"color:inherit\">CitiBike Demand Analysis</span></strong></span></h3>\n",
+          "vAlign": "valign-middle",
+          "bgColor": "rgb(69, 149, 228)"
+        }
+      },
+      "type": "richtexteditor"
+    },
+    {
+      "title": "",
+      "subtype": "WidgetsTabber",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": []
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "drawing": true,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "AD954-03C0-A2",
+      "oid": "591196d424cf092043000023",
+      "options": {
+        "dashboardFiltersMode": "filter",
+        "selector": false,
+        "autoUpdateOnEveryChange": true
+      },
+      "script": "/*\n\tWelcome to your Widget's Script. \n\t\n\t\t- You can access your Widget via the 'widget' variable name.\n\t\t- You can access your Widget's DOM via the 'element' variable name (undefined until DOM creation).\n\t\t- You can access your Dashboard by accessing the 'dashboard' variable name.\n\t\n\t\t- For a complete API reference for Widgets and Dashboards go here: https://docs.google.com/document/d/1nQBZtWAdNFAd9nBhPWGVT3qOMS4Qm0PzBZVIzz5DfE8/\n\t*/\nwidget.on('render',function(w, e){e.prefixText = 'Weather:';\n\t\t\t\t   e.suffixText = '';\n\t\t\t\t   e.selectedColor = '#86b817'; /*The color of the chosen title*/\n\t\t\t\t   e.fontColor = '#cccccc'; /*The color of the unchosen titles*/\n\t\t\t\t   e.elementWidth = '103%';\n\t\t\t\t   e.descColor = '#a5a5a5';\n\t\t\t\t   e.parentMarginLeft = '-15px';\n\t\t\t\t   e.height = 32; /* affects the tabber widget default high*/\n\t\t\t\t\t\t\t\t });\nwidget.tabs = [{title: \"Rain\", displayWidgetIds : [\"57328326b30181683a000135\",\"57328326b30181683a000137\"], \n\t\t\t\thideWidgetIds : [\"57328326b30181683a00012e\",\"57328326b30181683a00012c\"]}, \n               {title: \"Snow\", displayWidgetIds : [\"57328326b30181683a00012e\",\"57328326b30181683a00012c\"], \n\t\t\t\thideWidgetIds : [\"57328326b30181683a000135\",\"57328326b30181683a000137\"]}\n\t\t\t   \n\t\t\t   \n\t\t\t  ]; \n ",
+      "style": {
+        "activeTab": 0
+      },
+      "type": "WidgetsTabber"
+    },
+    {
+      "title": "Raw Data - Experiment with R",
+      "subtype": "pivot",
+      "desc": null,
+      "source": null,
+      "datasource": {
+        "title": "citibike_connect",
+        "fullname": "LocalHost/citibike_connect",
+        "id": "aLOCALHOST_aCITIBIKEXwAaCONNECT",
+        "address": "LocalHost",
+        "database": "acitibikeXwAaconnect"
+      },
+      "selection": null,
+      "metadata": {
+        "ignore": {
+          "dimensions": [],
+          "all": false
+        },
+        "panels": [
+          {
+            "name": "rows",
+            "items": [
+              {
+                "jaql": {
+                  "table": "citibike.csv",
+                  "column": "date",
+                  "dim": "[citibike.csv.date (Calendar)]",
+                  "datatype": "datetime",
+                  "merged": true,
+                  "level": "days",
+                  "title": "Days in date"
+                },
+                "format": {
+                  "mask": {
+                    "years": "yyyy",
+                    "quarters": "yyyy Q",
+                    "months": "MM/yyyy",
+                    "days": "shortDate",
+                    "isdefault": true
+                  }
+                },
+                "hierarchies": [
+                  "calendar"
+                ],
+                "field": {
+                  "id": "[citibike.csv.date (Calendar)]_days",
+                  "index": 0
+                }
+              }
+            ]
+          },
+          {
+            "name": "values",
+            "items": [
+              {
+                "jaql": {
+                  "table": "citibike.csv",
+                  "column": "rain",
+                  "dim": "[citibike.csv.rain]",
+                  "datatype": "numeric",
+                  "agg": "sum",
+                  "title": "Total rain"
+                },
+                "format": {
+                  "mask": {
+                    "type": "number",
+                    "t": true,
+                    "b": true,
+                    "separated": true,
+                    "decimals": "auto",
+                    "isdefault": true
+                  },
+                  "color": {
+                    "type": "color",
+                    "color": "transparent"
+                  }
+                },
+                "field": {
+                  "id": "[citibike.csv.rain]_sum",
+                  "index": 1
+                }
+              },
+              {
+                "jaql": {
+                  "table": "citibike.csv",
+                  "column": "snow",
+                  "dim": "[citibike.csv.snow]",
+                  "datatype": "numeric",
+                  "agg": "sum",
+                  "title": "Total snow"
+                },
+                "format": {
+                  "mask": {
+                    "type": "number",
+                    "t": true,
+                    "b": true,
+                    "separated": true,
+                    "decimals": "auto",
+                    "isdefault": true
+                  },
+                  "color": {
+                    "type": "color",
+                    "color": "transparent"
+                  }
+                },
+                "field": {
+                  "id": "[citibike.csv.snow]_sum",
+                  "index": 2
+                }
+              },
+              {
+                "jaql": {
+                  "table": "citibike.csv",
+                  "column": "temp",
+                  "dim": "[citibike.csv.temp]",
+                  "datatype": "numeric",
+                  "agg": "sum",
+                  "title": "Total temp"
+                },
+                "format": {
+                  "mask": {
+                    "type": "number",
+                    "t": true,
+                    "b": true,
+                    "separated": true,
+                    "decimals": "auto",
+                    "isdefault": true
+                  },
+                  "color": {
+                    "type": "color",
+                    "color": "transparent"
+                  }
+                },
+                "field": {
+                  "id": "[citibike.csv.temp]_sum",
+                  "index": 3
+                }
+              },
+              {
+                "jaql": {
+                  "table": "citibike.csv",
+                  "column": "weekend",
+                  "dim": "[citibike.csv.weekend]",
+                  "datatype": "numeric",
+                  "agg": "sum",
+                  "title": "Total weekend"
+                },
+                "format": {
+                  "mask": {
+                    "type": "number",
+                    "t": true,
+                    "b": true,
+                    "separated": true,
+                    "decimals": "auto",
+                    "isdefault": true
+                  },
+                  "color": {
+                    "type": "color",
+                    "color": "transparent"
+                  }
+                },
+                "field": {
+                  "id": "[citibike.csv.weekend]_sum",
+                  "index": 4
+                }
+              },
+              {
+                "jaql": {
+                  "type": "measure",
+                  "formula": "[64B18-4AD]",
+                  "context": {
+                    "[64B18-4AD]": {
+                      "table": "citibike.csv",
+                      "column": "actual_rides",
+                      "dim": "[citibike.csv.actual_rides]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total actual_rides"
+                    }
+                  },
+                  "title": "Actual Demand"
+                },
+                "format": {
+                  "mask": {
+                    "type": "number",
+                    "t": true,
+                    "b": true,
+                    "separated": true,
+                    "decimals": "auto",
+                    "isdefault": true
+                  },
+                  "color": {
+                    "type": "color",
+                    "color": "transparent"
+                  }
+                },
+                "field": {
+                  "id": "[64B18-4AD]",
+                  "index": 5
+                },
+                "disabled": false
+              },
+              {
+                "jaql": {
+                  "type": "measure",
+                  "formula": "RDOUBLE(\"setwd('c:/citybike'); args[[5]] * 2\", [62AA9-8D2],[E4A3C-3BD],[20CA4-9A8],[D9CAF-F23],[6BFB0-B71])",
+                  "context": {
+                    "[6BFB0-B71]": {
+                      "table": "citibike.csv",
+                      "column": "actual_rides",
+                      "dim": "[citibike.csv.actual_rides]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total actual_rides"
+                    },
+                    "[D9CAF-F23]": {
+                      "table": "citibike.csv",
+                      "column": "weekend",
+                      "dim": "[citibike.csv.weekend]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total weekend"
+                    },
+                    "[20CA4-9A8]": {
+                      "table": "citibike.csv",
+                      "column": "temp",
+                      "dim": "[citibike.csv.temp]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total temp"
+                    },
+                    "[E4A3C-3BD]": {
+                      "table": "citibike.csv",
+                      "column": "snow",
+                      "dim": "[citibike.csv.snow]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total snow"
+                    },
+                    "[62AA9-8D2]": {
+                      "table": "citibike.csv",
+                      "column": "rain",
+                      "dim": "[citibike.csv.rain]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total rain"
+                    }
+                  },
+                  "title": "Multiply demand by 2"
+                },
+                "format": {
+                  "mask": {
+                    "type": "number",
+                    "t": true,
+                    "b": true,
+                    "separated": true,
+                    "decimals": "auto",
+                    "isdefault": true
+                  },
+                  "color": {
+                    "type": "color",
+                    "color": "transparent"
+                  }
+                },
+                "disabled": false,
+                "field": {
+                  "id": "RDOUBLE(\"setwd('c:/citybike'); args[[5]] * 2\", [62AA9-8D2],[E4A3C-3BD],[20CA4-9A8],[D9CAF-F23],[6BFB0-B71])",
+                  "index": 6
+                }
+              },
+              {
+                "jaql": {
+                  "type": "measure",
+                  "formula": "RDOUBLE(\"setwd('c:/citybike'); cor(args[[5]] , args[[2]])\", [1CB5F-1B1],[FA67D-F28],[88078-CFF],[F0AA1-6EE],[4D5D0-A0A])",
+                  "context": {
+                    "[4D5D0-A0A]": {
+                      "table": "citibike.csv",
+                      "column": "actual_rides",
+                      "dim": "[citibike.csv.actual_rides]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total actual_rides"
+                    },
+                    "[F0AA1-6EE]": {
+                      "table": "citibike.csv",
+                      "column": "weekend",
+                      "dim": "[citibike.csv.weekend]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total weekend"
+                    },
+                    "[88078-CFF]": {
+                      "table": "citibike.csv",
+                      "column": "temp",
+                      "dim": "[citibike.csv.temp]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total temp"
+                    },
+                    "[FA67D-F28]": {
+                      "table": "citibike.csv",
+                      "column": "snow",
+                      "dim": "[citibike.csv.snow]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total snow"
+                    },
+                    "[1CB5F-1B1]": {
+                      "table": "citibike.csv",
+                      "column": "rain",
+                      "dim": "[citibike.csv.rain]",
+                      "datatype": "numeric",
+                      "agg": "sum",
+                      "title": "Total rain"
+                    }
+                  },
+                  "title": "Correlation between snow and demand"
+                },
+                "format": {
+                  "mask": {
+                    "type": "number",
+                    "t": true,
+                    "b": true,
+                    "separated": true,
+                    "decimals": "auto",
+                    "isdefault": true
+                  },
+                  "color": {
+                    "type": "color",
+                    "color": "transparent"
+                  }
+                },
+                "field": {
+                  "id": "RDOUBLE(\"setwd('c:/citybike'); cor(args[[5]] , args[[2]])\", [1CB5F-1B1],[FA67D-F28],[88078-CFF],[F0AA1-6EE],[4D5D0-A0A])",
+                  "index": 7
+                }
+              }
+            ]
+          },
+          {
+            "name": "columns",
+            "items": []
+          },
+          {
+            "name": "filters",
+            "items": [
+              {
+                "jaql": {
+                  "table": "TripData",
+                  "column": "DateKey",
+                  "dim": "[TripData.DateKey (Calendar)]",
+                  "datatype": "datetime",
+                  "merged": true,
+                  "level": "months",
+                  "title": "Days in DateKey",
+                  "filter": {
+                    "explicit": true,
+                    "multiSelection": true,
+                    "members": [
+                      "2019-12-01T00:00:00",
+                      "2019-11-01T00:00:00",
+                      "2019-10-01T00:00:00",
+                      "2019-09-01T00:00:00",
+                      "2019-08-01T00:00:00",
+                      "2019-07-01T00:00:00",
+                      "2019-06-01T00:00:00",
+                      "2019-05-01T00:00:00",
+                      "2019-04-01T00:00:00",
+                      "2019-03-01T00:00:00",
+                      "2019-02-01T00:00:00",
+                      "2019-01-01T00:00:00",
+                      "2018-12-01T00:00:00",
+                      "2018-11-01T00:00:00",
+                      "2018-10-01T00:00:00",
+                      "2018-09-01T00:00:00",
+                      "2018-08-01T00:00:00",
+                      "2018-07-01T00:00:00",
+                      "2018-06-01T00:00:00",
+                      "2018-05-01T00:00:00",
+                      "2018-04-01T00:00:00",
+                      "2018-03-01T00:00:00",
+                      "2018-02-01T00:00:00",
+                      "2018-01-01T00:00:00",
+                      "2017-12-01T00:00:00",
+                      "2017-11-01T00:00:00",
+                      "2017-10-01T00:00:00",
+                      "2017-09-01T00:00:00",
+                      "2017-08-01T00:00:00",
+                      "2017-07-01T00:00:00",
+                      "2017-06-01T00:00:00",
+                      "2017-05-01T00:00:00",
+                      "2017-04-01T00:00:00",
+                      "2017-03-01T00:00:00",
+                      "2017-02-01T00:00:00",
+                      "2017-01-01T00:00:00",
+                      "2016-12-01T00:00:00",
+                      "2016-11-01T00:00:00",
+                      "2016-10-01T00:00:00",
+                      "2016-09-01T00:00:00",
+                      "2016-08-01T00:00:00",
+                      "2016-07-01T00:00:00",
+                      "2016-06-01T00:00:00",
+                      "2016-05-01T00:00:00",
+                      "2016-04-01T00:00:00",
+                      "2016-03-01T00:00:00",
+                      "2016-02-01T00:00:00",
+                      "2016-01-01T00:00:00"
+                    ]
+                  },
+                  "collapsed": true
+                },
+                "format": {
+                  "mask": {
+                    "years": "yyyy",
+                    "quarters": "yyyy Q",
+                    "months": "MM/yyyy",
+                    "days": "shortDate",
+                    "isdefault": true
+                  }
+                },
+                "title": "Days in DateKey"
+              }
+            ]
+          }
+        ]
+      },
+      "dashboardid": "591196d424cf09204300001a",
+      "disableSelctor": false,
+      "drawing": true,
+      "drillToDashboardConfig": {
+        "drilledDashboardPrefix": "_drill_",
+        "displayFilterPane": false,
+        "displayDashboardsPane": false,
+        "displayToolbarRow": false,
+        "displayHeaderRow": false,
+        "volatile": false,
+        "hideDrilledDashboards": true,
+        "drillToDashboardMenuCaption": "Jump to dashboard",
+        "drillToDashboardRightMenuCaption": "Jump to dashboard",
+        "drillToDashboardNavigateType": 3,
+        "excludeFilterDims": [],
+        "includeFilterDims": [],
+        "drilledDashboardDisplayType": 2
+      },
+      "forcedRedraw": false,
+      "iconSmall": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAYCAYAAAC8/X7cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDOTk4NjMxNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDOTk4NjMyNzU1MTExRTM4QkE0QjUwRjg4NjAzOUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QUM5OTg2MkY3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QUM5OTg2MzA3NTUxMTFFMzhCQTRCNTBGODg2MDM5QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Ed6mDAAACVUlEQVR42uyYzytmURjHXWPCbsTkHxAyG1Ga1SSr2chWJFnIu2AW76zFQkqzkCl2RLGXpYVSFhZIfkzZyMbPMRYkkVyfh0P3feec+97z3iMppz6d4znnfu/z3POcHy/P9/2ct1xyc956kRmAev+xVL/EO77UNtSDD9Wufc+LKfCRqgxEZ9fzvEvHgafob68uXDpJIXEc+mkewx/YgH/YJqDYhePwnz62CSiOFQAOfqCagz4oCnTlQwcsM6YkhvMZ9RlTEmcGfsD3kH6Z8pEYE2Cln2f4yoVKSKZrhNzeD3QnIjjRjEYPz50ZvnKKPrltrY9GD/WZaREPQFK1v8FXFVgBVXnE7bkKlmz0ccpa35RClYF2RaB9Z5EKYWOd6ZsCkByTLUuO6cEnIylxQ7UZQVzGbYX0a/VJJWt9bQA4Ok/1WXYB2r/Sun9HeMEUz52bOnH0WZ92Vvo8d25cxCqIK6orTde4yts2w6Nr8DOTBzjgRD83w57fCutwCDNQSmAy7e3QLadjYPhfGJKXM+Yi4p7fCutwCDNQSmAZ9RlzEbqNKuebqKYDphZZcNjrcFAW0KigDi3ROVH2qAeWVh97HQ4+66tD60Ff2VNK2F2oU2OrhRpYCaTaaZYHViR9nD7N9jpdYLDnO7qrOdEPC2BWYzsIfp2YxYl+WABjMAy36u8daCRlrh0FoNUnZaz0w7ZRWTBJFmkv9ae0+1DsohZkkkX6oJ92H8o6gAQOH5l+/ViUPQKe1NgTOHxk2JWs9Al4UhdAl6MPvAi6AJzre+//lXjlci/AAOnMDanQIR59AAAAAElFTkSuQmCC",
+      "instanceid": "0E540-7FBA-5E",
+      "oid": "591196d424cf092043000027",
+      "options": {
+        "dashboardFiltersMode": "filter",
+        "selector": false,
+        "triggersDomready": true,
+        "drillToAnywhere": true,
+        "autoUpdateOnEveryChange": true
+      },
+      "style": {
+        "pageSize": 25,
+        "automaticHeight": false,
+        "colors": {
+          "rows": true,
+          "columns": false,
+          "headers": false,
+          "members": false,
+          "totals": false
+        }
+      },
+      "type": "pivot",
+      "viewState": {
+        "activeTab": "design"
+      }
+    }
+  ],
+  "hierarchies": []
+}
